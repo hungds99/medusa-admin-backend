@@ -103,11 +103,6 @@ const OnboardingFlow = (props: OnboardingWidgetProps) => {
   // step in the path parameter is the next step.
   const [searchParams] = useSearchParams();
 
-  console.log(
-    'process.env.MEDUSA_ADMIN_ONBOARDING_TYPE: ',
-    process.env.MEDUSA_ADMIN_ONBOARDING_TYPE,
-  );
-
   // the steps are set based on the
   // onboarding type
   const steps: Step[] = useMemo(() => {
